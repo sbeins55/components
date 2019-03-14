@@ -6,17 +6,23 @@ import CommentDetail from "./CommentDetail";
 const App = () => {
   return (
     <div className="ui container comments">
-      <CommentDetail author={Faker.name.firstName()}
-                     time={Faker.date.past().toLocaleString()}
-                     blog={Faker.lorem.sentence()}
+      <CommentDetail
+        image={Faker.image.avatar()}
+        author={Faker.name.firstName()}
+        time={Faker.date.past().toLocaleString()}
+        blog={Faker.lorem.sentence()}
       />
-      <CommentDetail author={Faker.name.firstName()}
-                     time={Faker.date.past().toLocaleString()}
-                     blog={Faker.lorem.sentence()}
+      <CommentDetail
+        image={Faker.image.avatar()}
+        author={Faker.name.firstName()}
+        time={Faker.date.past().toLocaleString()}
+        blog={Faker.lorem.sentence()}
       />
-      <CommentDetail author={Faker.name.firstName()}
-                     time={Faker.date.past().toLocaleString()}
-                     blog={Faker.lorem.sentence()}
+      <CommentDetail
+        image={Faker.image.avatar()}
+        author={Faker.name.firstName()}
+        time={Faker.date.past().toLocaleString()}
+        blog={Faker.lorem.sentence()}
       />
     </div>
   );
