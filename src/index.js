@@ -5,22 +5,32 @@ import CommentDetail from "./CommentDetail";
 import ApprovalCard from "./ApprovalCard";
 
 const App = () => {
-  function getContent() {
-    return (
-      <CommentDetail
-        image={Faker.image.avatar()}
-        author={Faker.name.firstName()}
-        time={Faker.date.past().toLocaleString()}
-        blog={Faker.lorem.sentence()}
-      />
-    );
-  }
-
   return (
     <div className="ui container comments">
-      <ApprovalCard content={getContent()} />
-      <ApprovalCard content={getContent()} />
-      <ApprovalCard content={getContent()} />
+      <ApprovalCard>
+        <CommentDetail
+          image={Faker.image.avatar()}
+          author={Faker.name.firstName()}
+          time={Faker.date.past().toLocaleString()}
+          blog={Faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          image={Faker.image.avatar()}
+          author={Faker.name.firstName()}
+          time={Faker.date.past().toLocaleString()}
+          blog={Faker.lorem.sentence()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          image={Faker.image.avatar()}
+          author={Faker.name.firstName()}
+          time={Faker.date.past().toLocaleString()}
+          blog={Faker.lorem.sentence()}
+        />
+      </ApprovalCard>
     </div>
   );
 };
